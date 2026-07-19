@@ -1,0 +1,68 @@
+project:
+  name: Personal 3D Portfolio
+  status: planning
+  gate_status: DESIGN_NOT_VALIDATED
+
+branding:
+  positioning: Digital Growth Partner and AI Implementation Expert
+  promise: Build the digital and AI systems that move companies forward
+  identity:
+    - caribbean
+    - tropical
+    - premium
+    - organic
+    - architectural
+    - immersive
+  avoid:
+    - generic_ai_visuals
+    - neon_tech_cliches
+    - robots_and_glowing_brains
+    - tourism_postcard_aesthetic
+
+experience:
+  concept: Entire website is an interactive 3D digital business card
+  visual_direction: Caribbean tropical growth ecosystem
+  interaction: scroll_driven
+  contact_form: required
+  public_contact_details: pending
+
+locales:
+  - fr-FR
+  - en-US
+  - es-419
+  - ar
+  - zh-CN
+  - ko-KR
+  - ja-JP
+  - pt-BR
+  rtl_required: true
+
+selected_resources:
+  ui-ux-pro-max:
+    role: research_and_design_system_reference
+  gsap-ai-skills:
+    role: master_scroll_and_motion_orchestration
+  21st-dev:
+    role: project_scoped_component_and_template_research
+    enabled: false
+    activation: at_project_kickoff
+  motion:
+    role: optional_ui_micro_interactions
+    enabled: false
+
+expected_architecture:
+  three_d_engine: to_be_selected
+  likely_options:
+    - three_js
+    - react_three_fiber
+  scroll_engine: gsap_scrolltrigger
+  content_layer: semantic_html
+  multilingual_layer: required
+
+rules:
+  - essential_content_must_not_exist_only_inside_webgl_canvas
+  - provide_reduced_motion_experience
+  - provide_non_webgl_fallback
+  - preserve_arabic_ligatures
+  - test_cjk_line_breaking
+  - never_allow_gsap_and_motion_to_control_same_property
