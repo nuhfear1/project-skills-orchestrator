@@ -1,0 +1,20 @@
+version: 1
+statuses:
+  approved:
+    meaning: approved_without_special_restrictions
+  approved_with_overrides:
+    meaning: approved_but_external_rules_are_mandatory
+  install_controlled:
+    meaning: preserve_original_and_apply_external_governance
+  approved_optional:
+    meaning: available_but_disabled_by_default
+  adapt:
+    meaning: useful_after_explicit_modification_or_fork
+  redundant:
+    meaning: duplicates_existing_authority_without_enough_value
+  mediocre:
+    meaning: insufficient_quality_for_normal_use
+  quarantine:
+    meaning: unresolved_risk_or_missing_information
+  rejected:
+    meaning: must_not_be_used
