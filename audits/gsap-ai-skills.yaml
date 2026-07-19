@@ -1,0 +1,46 @@
+resource:
+  name: GSAP AI Skills
+  source: https://github.com/greensock/gsap-skills
+  type: skill_bundle
+
+audit:
+  score: 8.4
+  security_score: 9.5
+  technical_accuracy_score: 7.5
+  project_relevance_score: 9.5
+  verdict: approved_with_overrides
+  risk: low
+  preserve_original: true
+
+strengths:
+  - official_greensock_repository
+  - strong_scrolltrigger_guidance
+  - react_cleanup_patterns
+  - performance_and_reduced_motion_guidance
+  - modular_subskills
+
+issues:
+  - refresh_priority_explanation_reversed
+  - horizontal_scroll_example_contains_errors
+  - nuxt_example_contains_duplicate_typescript_alias
+  - global_scrolltrigger_cleanup_example_too_aggressive
+  - recommends_gsap_by_default_without_architectural_context
+
+overrides:
+  correct_refresh_priority: higher_values_refresh_earlier
+  forbid_broken_horizontal_scroll_example: true
+  forbid_global_scrolltrigger_cleanup: true
+  require_component_scoped_cleanup: true
+  require_prefers_reduced_motion: true
+  protect_arabic_ligatures_and_cjk_line_breaking: true
+
+recommended_role:
+  - master_animation_timelines
+  - scroll_storytelling
+  - camera_orchestration
+  - animation_performance
+
+forbidden_role:
+  - three_d_rendering_engine
+  - design_authority
+  - product_strategy_authority
