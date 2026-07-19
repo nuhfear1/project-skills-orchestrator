@@ -1,0 +1,32 @@
+resource:
+  name: UI/UX Pro Max
+  source: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+  type: skill
+
+audit:
+  score: 8.0
+  verdict: install_controlled
+  risk: low
+  preserve_original: true
+
+strengths:
+  - local_bm25_search
+  - broad_design_reference_dataset
+  - design_system_generation
+  - palettes_typography_and_stack_guidance
+
+limits:
+  - metadata_and_version_inconsistencies
+  - recommendations_are_heuristics_not_authority
+  - cli_added_subskills_require_separate_audit
+
+role:
+  - research
+  - visual_direction
+  - design_system_reference
+  - ui_review
+
+restrictions:
+  - no_product_strategy_authority
+  - no_automatic_installation_of_subskills
+  - no_override_of_validated_figma_direction
