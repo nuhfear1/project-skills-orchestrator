@@ -1,0 +1,55 @@
+version: 1
+skills:
+  ui-ux-pro-max:
+    name: UI/UX Pro Max
+    type: skill
+    source: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+    status: install_controlled
+    score: 8.0
+    risk: low
+    preserve_original: true
+    authority:
+      design_recommendations: advisory
+      product_strategy: none
+      architecture: none
+    phases:
+      - research
+      - visual_direction
+      - design_system
+      - review
+    audit: audits/ui-ux-pro-max.yaml
+
+  gsap-ai-skills:
+    name: GSAP AI Skills
+    type: skill_bundle
+    source: https://github.com/greensock/gsap-skills
+    status: approved_with_overrides
+    score: 8.4
+    risk: low
+    preserve_original: true
+    subskills:
+      - gsap-core
+      - gsap-timeline
+      - gsap-scrolltrigger
+      - gsap-plugins
+      - gsap-utils
+      - gsap-react
+      - gsap-performance
+      - gsap-frameworks
+    authority:
+      animation: high
+      scroll_orchestration: high
+      design: none
+      product_strategy: none
+      architecture: limited
+    required_overrides:
+      - correct_refresh_priority
+      - forbid_broken_horizontal_scroll_example
+      - forbid_global_scrolltrigger_cleanup
+      - enforce_reduced_motion
+      - protect_rtl_and_cjk_text
+    phases:
+      - motion_design
+      - implementation
+      - performance_review
+    audit: audits/gsap-ai-skills.yaml
