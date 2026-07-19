@@ -1,0 +1,35 @@
+version: 1
+libraries:
+  motion:
+    name: Motion
+    package: motion
+    repository: https://github.com/motiondivision/motion
+    official: true
+    license: MIT
+    status: approved_optional
+    score: 9.1
+    risk: low
+    activation: project_scoped
+    default_enabled: false
+    suitable_for:
+      - react_ui_motion
+      - micro_interactions
+      - gestures
+      - layout_transitions
+      - enter_exit_animations
+    unsuitable_for:
+      - three_dimensional_rendering
+      - master_scroll_storytelling
+      - camera_orchestration
+      - complex_cinematic_timelines
+    installation:
+      command: npm install motion
+      import_react: import { motion } from "motion/react"
+    conflicts:
+      - do_not_animate_same_property_with_motion_and_gsap
+      - do_not_control_same_transform_with_motion_and_gsap
+    authority:
+      design: none
+      architecture: none
+      ui_animation: conditional
+    audit: audits/motion-library.yaml
