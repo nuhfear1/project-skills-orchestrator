@@ -1,0 +1,34 @@
+version: 1
+tools:
+  21st-dev:
+    name: 21st.dev
+    type:
+      - component_registry
+      - template_library
+      - cli
+      - mcp
+    status: approved_optional
+    activation:
+      mode: project_scoped_on_demand
+      trigger: project_kickoff_and_explicit_approval
+      configuration_scope: target_repository_environment
+      default: disabled
+      never_attach_to_unrelated_repository: true
+    roles:
+      - search_components
+      - search_templates
+      - install_components
+    phases:
+      research: allowed
+      visual_direction: allowed
+      design_system: reference_only
+      implementation: requires_approval
+    restrictions:
+      - no_automatic_installation
+      - no_publishing_without_approval
+      - no_design_decision_authority
+      - no_secret_storage_in_repository
+    environment:
+      variable: API_KEY_21ST
+      setup_command: npm install -g @21st-dev/cli
+      internet_domain: 21st.dev
