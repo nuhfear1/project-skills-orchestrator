@@ -1,0 +1,42 @@
+resource:
+  name: Motion
+  source: https://github.com/motiondivision/motion
+  package: motion
+  type: library
+
+audit:
+  library_score: 9.1
+  security_score: 9.0
+  project_relevance_score: 7.5
+  skill_score: 1.0
+  verdict: approved_optional
+  risk: low
+
+findings:
+  - official_animation_library
+  - mit_license
+  - react_javascript_and_vue_support
+  - repository_is_not_a_skill_bundle
+  - motion_plus_ai_skills_are_not_in_the_open_source_repository
+  - install_package_instead_of_cloning_monorepo
+
+recommended_role:
+  - react_ui_motion
+  - gestures
+  - micro_interactions
+  - layout_transitions
+
+forbidden_role:
+  - three_d_rendering
+  - master_scroll_storytelling
+  - camera_orchestration
+  - architecture_authority
+
+installation:
+  command: npm install motion
+  default_enabled: false
+  project_scoped: true
+
+conflicts:
+  - motion_and_gsap_must_not_control_the_same_transform
+  - motion_and_gsap_must_not_animate_the_same_property
