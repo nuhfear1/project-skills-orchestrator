@@ -1,7 +1,8 @@
 project:
   name: Personal 3D Portfolio
-  status: planning
-  gate_status: DESIGN_NOT_VALIDATED
+  status: active_planning
+  current_phase: framing
+  gate_status: IN_PROGRESS
 
 branding:
   positioning: Digital Growth Partner and AI Implementation Expert
@@ -66,3 +67,10 @@ rules:
   - preserve_arabic_ligatures
   - test_cjk_line_breaking
   - never_allow_gsap_and_motion_to_control_same_property
+
+framing:
+  objective: pending_validation
+  primary_audiences: pending_validation
+  conversion_goal: pending_validation
+  content_scope: pending_validation
+  success_criteria: pending_validation
