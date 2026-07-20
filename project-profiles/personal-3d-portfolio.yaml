@@ -78,7 +78,15 @@ framing:
       - present_expertise_as_one_coherent_system
       - serve_as_portfolio_business_card_and_capability_proof
       - attract_international_companies_entrepreneurs_and_partners
-  primary_audiences: pending_validation
+  primary_audiences:
+    status: validated
+    priority:
+      - leaders_of_smes_and_growth_companies
+      - entrepreneurs_and_digital_project_founders
+      - liberal_professionals_and_independent_practices
+    secondary:
+      - agencies_and_technical_or_creative_partners
+    shared_need: A trusted partner able to transform a digital or AI objective into a coherent and operational system.
   conversion_goal: pending_validation
   content_scope: pending_validation
   success_criteria: pending_validation
