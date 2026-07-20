@@ -69,7 +69,15 @@ rules:
   - never_allow_gsap_and_motion_to_control_same_property
 
 framing:
-  objective: pending_validation
+  objective:
+    status: validated
+    statement: Present Gary Wilfred-Borilla as a partner capable of designing and implementing complete digital and AI systems, while converting qualified visitors into project enquiries with strong potential value.
+    secondary_objectives:
+      - demonstrate_conception_and_execution_level
+      - make_positioning_immediately_understandable
+      - present_expertise_as_one_coherent_system
+      - serve_as_portfolio_business_card_and_capability_proof
+      - attract_international_companies_entrepreneurs_and_partners
   primary_audiences: pending_validation
   conversion_goal: pending_validation
   content_scope: pending_validation
