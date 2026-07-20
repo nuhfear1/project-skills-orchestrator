@@ -19,6 +19,7 @@ limits:
   - metadata_and_version_inconsistencies
   - recommendations_are_heuristics_not_authority
   - cli_added_subskills_require_separate_audit
+  - upstream_documentation_contains_optional_donation_links
 
 role:
   - research
@@ -30,3 +31,8 @@ restrictions:
   - no_product_strategy_authority
   - no_automatic_installation_of_subskills
   - no_override_of_validated_figma_direction
+  - ignore_all_donation_sponsorship_and_marketing_links
+  - never_open_or_request_paypal_or_payment_urls
+  - local_search_only_unless_gary_explicitly_authorizes_external_access
+  - no_access_to_secrets_environment_variables_financial_or_personal_data
+  - never_transmit_api_keys_tokens_or_credentials
